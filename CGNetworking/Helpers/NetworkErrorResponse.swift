@@ -46,7 +46,7 @@ public class NetworkErrorResponse {
             userInfo["description"] = "Resolves network failure \(networkError)"
         }
         
-        return NSError(domain: "com.foodly.main", code: code, userInfo: userInfo)
+        return NSError(domain: "com.cgnetworking.main", code: code, userInfo: userInfo)
     }
     
 }
