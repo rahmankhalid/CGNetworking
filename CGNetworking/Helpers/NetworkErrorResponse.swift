@@ -44,9 +44,7 @@ public class NetworkErrorResponse {
             userInfo["description"] = "Parsing Error: \(parseError)"
         case .resolvedNetworkFailure(let networkError):
             userInfo["description"] = "Resolves network failure \(networkError)"
-        }
-        
+        }   
         return NSError(domain: "com.cgnetworking.main", code: code, userInfo: userInfo)
     }
-    
 }
